@@ -1,0 +1,405 @@
+/*------------------------------
+Developed by- Soumyashree Dixit
+position- Web Designer/Developer
+Date-02/04/2026 
+ -------------------------------*/
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{margin: 0;font-family: "Poppins", sans-serif;font-style: normal;padding-top: 140px;}
+
+
+/* Header */
+.header-wrap {display: flex;justify-content: space-between;position: relative;padding: 0 15px;align-items: center;}
+#header-nav {background: linear-gradient(180deg, #8D0101 0%, #640000 100%) !important;padding: 17px;display: flex;align-items: center;text-align: center;justify-content: space-evenly;}
+#header-nav a {color: #fff;text-decoration: none;font-size: 20px;}
+header#header-top {position: fixed;top: 0px;left: 0px;width: 100%;z-index: 9999;background: rgb(255, 255, 255);}
+h2 {font-weight: 500;font-size: 30px;}
+div#logo img {width: 280px;position: relative;top: 8px;}
+.header-right img {max-width: 100%;}
+
+/* Slider */
+#slider {position: relative;}
+.slide{display:none;width:100%;height: 910px;position: relative;}
+.slide.active{display:block;}
+.dots{display:flex;justify-content: center;gap:10px;margin-top: -30px;z-index: 9;position: relative;}
+.dot{width:10px;height:10px;border-radius:50%;background: #fff;cursor:pointer;}
+.dot.active{width:24px;border-radius:20px;background:#640000;}
+.slides{position: relative;}
+.slides:after{position: absolute;content:"";inset: 0;height: 100%;background: linear-gradient(90deg, #320000 0%, #4a000085 50%, #64000000 100%);}
+.slider-caption {position: absolute;top: 45%;left: 80px;transform: translateY(-50%);z-index: 10;color: #fff;max-width: 570px;}
+h1.slider-header {font-size: 40px;min-width: 700px;width: 100%;}
+#slider h2 {font-style: italic;}
+
+/* slider-caption */
+.courses {font-size: 30px;color: #fff;margin: 0 0 10px 0;border-bottom: 1px solid #fff;padding: 0 0 10px 0;font-weight: 700;}
+
+/* pop-up box */
+.registration-card{position:absolute;top: 56%;right:60px;transform:translateY(-50%);width:360px;background:#fff;border-radius:24px;padding:20px;z-index:20;}
+.phone-group{display:flex;gap:8px;}
+.country-code{padding: 8px;margin: 10px 0 0;width: 20%;}
+.phone-group input{flex:1;}
+.location-row{display:flex;gap:8px;}
+.location-row input{width:100%;}
+.captcha-row{display:flex;gap:8px;margin: 10px 0 0;position: relative;}
+#captchaBox{width:110px;height:48px;display:flex;align-items:center;justify-content:center;border:1px solid #ddd;font-weight:700;letter-spacing:2px;}
+#refreshCaptcha{width:48px;border:none;cursor:pointer;}
+a.register-btn{width:100%;height:54px;background:linear-gradient(180deg, #8D0101 0%, #640000 100%);color:white;border:none;border-radius:8px;display: flex;align-items: center;justify-content: center;text-decoration: none;}
+.signin-link a {color: #640000;text-decoration: none;font-weight: 500;}
+div input {padding: 8px;margin: 10px 0 0;width: 94%;}
+select {width: 100%;padding: 8px;margin: 10px 0 0;}
+.registration-card p.important-note {margin: 0;}
+.registration-card p.subtext {margin: 8px 0;}
+label.checkbox-wrap input {width: unset;}
+
+/* Director */
+#director .director-wrap {display: flex;align-items: center;gap: 150px;}
+#director .director-msg {position: relative;width: 70%;}
+section#director {position: relative;padding: 80px 100px 0;}
+#director h1.d-header {position: relative;}
+#director h1.d-header:after {position: absolute;content: "";inset: 0;width: 200px;height: 2px;background: #FF861E;top: 50px;}
+#director .director-img {position: relative;width: 21%;}
+#director .director-img img {height: 380px;}
+
+/* about */
+#about {position: relative;}
+.p-1-right ul {padding: 0;margin: 0;border-radius: 30px;overflow: hidden;display: grid;grid-template-columns:repeat(4, 1fr);}
+.p-1-right ul li {list-style: none;height: auto;padding: 20px;min-height: 200px;background: #640000;}
+.p-1-right ul li:nth-child(2), .p-1-right ul li:nth-child(4), .p-1-right ul li:nth-child(5), .p-1-right ul li:nth-child(7) {background: #FF861E;}
+.p-1-right h4 {font-size: 30px;margin: 0 0 10px 0;line-height: 40px;color: #fff;}
+.p-1-right p {font-size: 18px;margin: 0 0 0px 0;font-weight: 500;color: #fff;}
+.p-1-right h5 {font-size: 22px;margin: 0 0 0px 0;line-height: 100%;color: #EAEAEA;}
+.p-1-right {width: 100%;height: auto;padding: 40px 0 0;}
+.p-1-right ul li:nth-child(4) {border-radius: 0 30px 0 0;}
+.p-1-right ul li:last-child {border-radius: 0 0 30px 0;}
+.about-list-box {position: relative;padding: 0 100px;top: -70px;}
+.about-btm{position: relative;}
+.about-btm::before{position: absolute;content: '';inset: 0;background: #fff url(./assets/bg-1.png) no-repeat;width: 100%;height: 100%;background-position: 0 100%;background-size: 100% auto;padding: 50px 0;min-height: 1050px;}
+#about h2 {font-weight: 400;font-size: 20px;color: #555555;font-size: 25px;}
+#about h1.about-header {font-size: 72px;margin: 0;}
+#about .about-top {position: relative;padding: 30px 100px;}
+
+/* Program */
+#programmers {position: relative;padding: 35% 100px 35px;}
+#programmers h1.main-header {font-size: 80px;margin: 0;color: #FF861E;}
+#programmers .program-btm-wrap {display: flex;gap: 100px;}
+#programmers .program-btm{background:#fff;border-radius:24px;padding: 40px;box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);}
+#programmers .program-tabs{display:flex;flex-direction:column;position: relative;width: 50%;}
+#programmers .tab-btn{border:none;background:none;text-align:left;padding:22px 30px;font-size:24px;cursor:pointer;border-bottom:1px solid #ddd;transition:.3s;}
+#programmers .tab-btn.active{background: #FF861E;color:#fff;border-radius:50px;position: relative;}
+#programmers .program-content{position:relative;top: -35px;width: 50%;}
+#programmers .tab-content{display:none;}
+#programmers .tab-content.active{display:block;}
+#programmers .tab-content h2{color: #640000;font-size:42px;margin-bottom:20px;font-weight: 600;}
+#programmers .tab-content ul{margin-top:30px;}
+#programmers .tab-content li{margin-bottom:15px;list-style: none;position: relative;}
+#programmers .apply-btn{display:inline-block;margin-top:30px;padding:14px 40px;background: #FF861E;color:#fff;border-radius:40px;text-decoration:none;}
+#programmers button.tab-btn.active:after {content: "";position: absolute;right: 28px;top: 22px;width: 42px;height: 31px;background: url(./assets/arw.png) no-repeat;background-size: 100% auto;}
+#programmers h2.sub-header {font-size: 52px;margin: 0;}
+#programmers .tab-content li:before{width: 20px;height: 22px;background: url(./assets/bul.png) no-repeat;content: "";position: absolute;left: -35px;top: 4px;}
+
+/* partners */
+#partners .p-lists li {list-style: none;width: 28%;float: left;height: 70px;display: flex;justify-content: center;align-items: center;box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 12px;padding: 5px;margin: 20px 20px 10px 0;border-radius: 7px;background: #fff;}
+#partners .logo-slider{overflow:hidden;width:100%;padding:10px 0;}
+#partners .logo-track{display:flex;gap:30px;width:max-content;}
+#partners .logo-card{width:180px;height:80px;background:#fff;border-radius:12px;display:flex;justify-content:center;align-items:center;flex-shrink:0;box-shadow:0 4px 10px rgba(0,0,0,.08);}
+#partners .logo-card img{max-width:120px;max-height:50px;object-fit:contain;}
+#partners .partner-right {width: 50%;background: #EEEEEE;position: relative;padding: 12px 0 50px 30px;}
+#partners .partner-left{width: 50%;padding-left: 60px;}
+#partners .partner-wrap {display: flex;}
+#partners{position:relative;padding:60px 0;overflow: hidden;}
+#partners h2.partner-header {font-size: 50px;margin: 0;font-weight: 700;}
+#partners h2.partner-title {font-size: 50px;margin: 0;font-weight: 600;}
+#partners h2 {margin: 0;}
+
+/* counter */
+#counter {position: relative;padding: 0 100px;}
+#counter .counter-wrap {display: flex;justify-content: space-between;}
+#counter .counter-text {font-size: 26px;color: #818181;margin: 20px 0 0 0;}
+#counter h2.counter-title {color: #FF861E;font-size: 72px;font-weight: 700;margin: 0;width: 459px;line-height: 1;}
+#counter span {font-style: italic;font-weight: 500;color: #640000;}
+#counter .counter-left {width: 50%;}
+#counter .counter-right{width: 50%;}
+#counter .counter-right{display:grid;grid-template-columns: repeat(2, 1fr);}
+#counter .counter-box{text-align:center;padding: 20px;border-radius:12px;background:#fff;width: 230px;}
+#counter .counter-box h3{font-size:48px;font-weight:700;color:#640000;margin-bottom:10px;margin-top: 0;}
+#counter .counter-box p{margin:0;font-size: 16px;font-weight: 500;}
+#counter .counter-box h3::after{position: absolute;content: "+";}
+
+/* admission */
+#admission img.mob-home {display: none;}
+#admission .nav-content li {list-style: none;}
+#admission .nav-content{display:none;}
+#admission .nav-content.active{display:flex !important;justify-content:space-between;align-items:flex-start;gap:20px;}
+#admission .nav-content li{list-style:none;}
+#admission .ad-btm-wrap ul{width:100%;}
+#admission .ad-top {display: flex;align-items: center;gap: 215px;}
+#admission {position: relative;padding: 0 100px;}
+#admission {position: relative;padding: 0 100px;}
+#admission button.nav-btn.active {background: #640000;color: #fff;text-decoration: none;border: 0px;}
+#admission .ad-navs {display: flex;flex-wrap: wrap;padding-left: 0;margin-bottom: 0;list-style: none;border-bottom: 0px solid #dee2e6;gap: 10px;justify-content: center;}
+#admission button.nav-btn {border-radius: 40px;background: #fff;border: 1px solid #ccc;margin-bottom: 0px;font-size: 15px;font-weight: 400;color: #000;text-decoration: none;padding: 6px 15px;text-align: center;min-height: 60px;display: flex;justify-content: center;align-items: center;cursor: pointer;font-size: 20px;}
+#admission h2.ad-title {font-size: 45px;font-weight: 700;}
+#admission .ad-btm-wrap {display: flex;padding: 0;margin: 0;flex-wrap: wrap;justify-content: center;}
+#admission .list-arrow img {max-width: 116%;height: auto;margin-left: -20%;}
+#admission .list-name {width: 100%;height: auto;max-width: 100%;min-height: auto;}
+#admission .p-8-icon{width: 100%;height: 55px;}
+#admission .p-8-icon img {max-height: 55px;}
+#admission h3.btm-head {font-size: 20px;margin: 0;color: #640000;}
+#admission .list-name h5 {font-size: 60px;font-weight: 400;line-height: 60px;color: #000;margin: 0 0 0 -5px;}
+#admission .ad-btm p {font-weight: 500;}
+
+/* Faculty */
+#faculty .mob-owner li {list-style: none;text-align: center;}
+#faculty ul {display: flex;padding: 0;flex-wrap: wrap;justify-content: space-around;}
+#faculty .mob-owner-pic img {width: 300px;height: 400px;}
+#faculty .faculty-header span {font-weight: 600;font-style: italic;color: #FF861E;}
+#faculty h2.faculty-header {font-weight: 700;font-size: 45px;margin: 20px 0;}
+#faculty {overflow: hidden;position: relative;padding: 40px 0 0;}
+#faculty .faculty-wrap:before {content: "";width: 100%;height: 20%;position: absolute;bottom: 0;left: 0;background: linear-gradient(180deg, rgba(237, 75, 0, 0) 0%, #640000 100%);}
+#faculty .faculty-wrap {position: relative;}
+#faculty .faculty-top {padding: 0 100px;}
+#faculty .faculty-btm {padding: 0 100px;}
+#faculty .mob-owner h4 {color: #640000;margin: 20px 0 10px;}
+#faculty .mob-owner p {font-style: italic;margin: 0;}
+
+/* Events */
+#events {position: relative;padding: 0 100px;background: #000;}
+#events .gallery-section{overflow:hidden;width:100%;}
+#events .gallery-track{display:flex;gap:0;width:max-content;will-change:transform;}
+#events .gallery-item{overflow:hidden;border-right: 5px solid #fff;}
+#events .gallery-item.large{width:350px;height:250px;border: 5px solid #fff;}
+#events .gallery-item.wide{width:450px;height:250px;border: 5px solid #fff;}
+#events .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;border: 5px solid #fff;}
+#events .gallery-grid{display:grid;grid-template-columns:repeat(4,250px);grid-auto-rows:180px;gap:10px;flex-shrink:0;}
+#events .events-top {display: flex;justify-content: space-between;align-items: center;}
+#events .events-text {width: 730px;color: #fff;border-left: 1px solid #fff;padding-left: 28px;}
+#events h2.events-title {font-weight: 700;font-size: 50px;color: #fff;}
+#events .events-btm {position: relative;padding-bottom: 100px;}
+
+/* Scholarship */
+#scholarship h2.scholar-heder{font-size: 45px;margin: 0;text-transform: capitalize;font-weight: 700;color: #fff;}
+#scholarship {position: relative;padding: 20px 100px;background: #640000;}
+#scholarship p{font-size:25px;color:#fff;font-style:italic;font-weight:600;margin: 0;}
+
+/* why cgu */
+#main .main-title{font-size:60px;margin:0;color: #fff;}
+#main  .main-title span{color:#f26522;font-size: 70px;font-style: italic;}
+section#main {position: relative;padding: 40px 100px;background: black;}
+#main  #main-navs{display:flex;flex-wrap:wrap;gap: 15px;margin-bottom:50px;}
+#main .main-tab{border:none;border-radius:50px;background:#ddd;cursor:pointer;transition:.3s;font-size: 18px;padding: 6px 15px;text-align: center;min-height: 60px;}
+#main .main-tab.active{background:#f26522;color:#fff;}
+#main .main-content{display:none;}
+#main .main-content.active{display:flex;justify-content:space-between;gap:60px;}
+#main .content-left{width:50%;color: #fff;}
+#main .content-left h3{font-size: 45px;margin-bottom:25px;}
+#main .content-left ul{padding-left:25px;}
+#main .content-left li{margin-bottom:20px;line-height:1.8;}
+#main .content-right{width:50%;}
+#main .content-right img{width:100%;display:block;border-radius: 20px;}
+
+/* Testimonials */
+.video-frame {display: flex;gap: 20px;}
+h2.test-header {font-weight: 700;font-size: 45px;margin: 0 0 20px;}
+.test-header span {font-weight: 600;font-style: italic;color: #FF861E;}
+#testimonials {position: relative;padding: 60px 100px;}
+
+/* Notable-alumni */
+#notable-alumni {position: relative;padding: 60px 100px;background: #000;color: #fff;}
+#notable-alumni h2.notable-header {font-size: 45px;font-weight: 700;margin: 0;color: #fff;}
+#notable-alumni h2.notable-header span {color: #FF861E;font-style: italic;}
+
+/* career-opportinuties */
+#career-opportunities h2.career-header {font-size: 45px;font-weight: 700;margin: 0;}
+#career-opportunities {position: relative;padding: 40px 100px;box-shadow: 0px 0px 8px 3px #b9b9b9;margin: 20px;border-radius: 20px;}
+#career-opportunities p{font-size: 25px;}
+
+/* career-paths */
+#career-paths{display:flex;height:500px;overflow:hidden;}
+#career-paths .career-card{width: 150px;color:#fff;position:relative;cursor:pointer;transition:.6s ease;border-right:3px solid #000;background: linear-gradient(180deg, #8D0101 0%, #640000 100%) !important;}
+#career-paths .career-card.active{flex:1;width:auto;background: #FF861E !important;padding: 65px 0 30px;}
+#career-paths .card-content{padding:50px;transition:.4s;}
+#career-paths .career-card.active .card-content{opacity:1;visibility:visible;padding: 0;}
+#career-paths .vertical-title{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)rotate(90deg);width:350px;text-align:center;font-size:22px;font-weight:700;}
+#career-paths .career-card.active .vertical-title{top: 15px;transform: unset;left: 30px;width: 100%;right: 0;text-align: left;}
+#career-paths .arrow{position:absolute;bottom:30px;left: 60px;transform:translateX(-50%);font-size:50px;}
+#career-paths .career-card p {opacity: 0;}
+#career-paths .career-card li {opacity: 0;}
+#career-paths .career-card.active li,.career-card.active p{opacity:1}
+#career-paths .career-card.active p{opacity:1;margin-left: 30px;}
+
+
+/*Responsive*/
+
+@media (min-width:992px){
+    #menu-toggle {display: none;}
+    .mobile-register-btn{display:none;}
+    span.close-form {display: none;}
+}
+@media (max-width:1700px){
+    #faculty .mob-owner-pic img {width: 250px;height: 340px;}
+}
+@media (max-width:1500px){
+    #director .director-wrap {gap: 170px;}
+}
+@media (max-width:1600px){
+    #about .about-top{padding:30px;}
+    #about h1.about-header {font-size: 42px;}
+    .about-list-box {padding: 0 30px;}
+    .about-btm::before {min-height: 850px;}
+}
+@media (max-width:1200px){
+    #programmers h2.sub-header {font-size: 36px;}
+    #programmers h1.main-header {font-size: 50px;}
+    #programmers {padding: 40% 40px 0;}
+    #programmers .tab-content h2 {font-size: 32px;}
+    #partners h2.partner-title {font-size: 38px;}
+    #partners h2.partner-header {font-size: 36px;}
+    #counter{padding: 0 40px;overflow: hidden;}
+    #counter h2.counter-title {font-size: 52px;width: 100%;}
+    #admission h2.ad-title {font-size: 35px;}
+    #admission button.nav-btn{font-size: 15px;}
+    #admission .ad-top {gap: 140px;}
+    #admission {padding: 0 60px;}
+    #faculty .faculty-top,#faculty .faculty-btm{padding: 0 20px;}
+    #events{padding: 0 60px;}
+}
+@media (max-width:1100px){
+    #header-nav a {font-size: 16px;}
+}
+
+@media (max-width:991px){
+#header-nav{position:absolute;top:100%;left:0;width:100%;background:#fff;display:flex;flex-direction:column;max-height:0;overflow:hidden;transition:max-height .3s ease;z-index:999;text-align: left;}
+#header-nav.active {max-height: 500px;text-align: left;align-items: baseline;width: 100%;padding: 0;}
+#header-nav a{padding:15px 20px;border-bottom:1px solid #eee;width: 100%;font-size: 14px;}
+#menu-toggle{font-size:32px;cursor:pointer;display:block;color:#640000;position: relative;right: 15px;text-align: right;}
+.registration-card{display:none;}
+.mobile-register-btn{display:flex;align-items:center;justify-content:center;position:fixed;bottom: 10px;right: 20px;height:55px;background:#640000;color:#fff;border-radius:10px;font-weight:600;z-index:9999;cursor:pointer;width: 110px;}
+.registration-card.show{display:block;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:420px;max-height:90vh;overflow-y:auto;z-index:10001;}
+.form-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:10000;}
+.form-overlay.show{display:block;}
+.close-form{position:absolute;top:15px;right:15px;cursor:pointer;font-size:20px;}
+.slider-caption{left: unset;padding: 0 20px;}
+#logo img {width: 240px;}
+.slide {height: 540px;}
+.courses,h1.slider-header{font-size: 20px;min-width: unset;}
+h2 {font-size: 15px;}
+#director .director-wrap{flex-direction: column;gap: 0;}
+.director-img,#director .director-msg {width: 100% !important;}
+section#director {padding: 40px 20px 0;overflow: hidden;}
+#about h2 {font-size: 15px;}
+#about h1.about-header {font-size: 34px;}
+.about-btm::before {min-height: 750px;}
+#programmers .program-btm-wrap{flex-direction: column;gap: 25px;}
+#programmers .program-tabs{width: 100%;}
+#programmers .program-content{width: 100%;top: 0;}
+#partners .partner-wrap{flex-direction: column;gap: 30px;}
+#partners .partner-left,#partners .partner-right{width: 100%;padding: 0 20px;}
+#counter .counter-wrap{flex-direction: column;}
+#counter .counter-left,#counter .counter-right{width: 100%;}
+#counter .counter-box {width: 190px;}
+#admission .ad-top{flex-direction: column;gap: 30px;}
+#admission {padding: 0 20px;}
+#faculty ul {display: flex;padding: 0;gap: 50px;flex-wrap: wrap;}
+#faculty .faculty-wrap:before{display: none;}
+#admission .ad-navs {flex-direction: column;}
+#faculty ul {gap: 10px;}
+#faculty h2.faculty-header {font-size: 30px;}
+#counter h2.counter-title {font-size: 40px;}
+#counter .counter-box h3 {font-size: 35px;}
+#partners .partner-left{padding: 0;}
+#partners h2.partner-title {font-size: 30px;padding: 0 20px;}
+#partners p.partner-text {padding: 0 20px;}
+#events{padding: 0 20px;}
+#events .events-top{flex-direction: column;}
+#events h2.events-title{margin: 20px 0;font-size: 35px;}
+#events .events-btm {padding-top: 20px;}
+#events .events-text{border-left: none;padding-left: 0;width: 100%;text-align: center;font-size: 14px;}
+.slider-caption{top: 50%;}
+.p-1-right h4 {font-size: 22px;line-height: 25px;}
+.p-1-right p {font-size: 15px;}
+section#main{padding: 40px 20px;margin: 20px 0;}
+#main .main-content.active{flex-direction: column;gap: 20px;}
+#main .content-left,#main .content-right{width: 100%;}
+#main .content-left h3{margin: 0;}
+#main .main-tab {font-size: 14px;}
+#main .main-title span {font-size: 50px;}
+#main .main-title {font-size: 35px;}
+#main #main-navs {margin-bottom: 20px;}
+#main .content-left h3 {font-size: 35px;}
+#partners {padding: 20px 0;}
+#scholarship{padding:20px}
+#scholarship h2.scholar-heder {font-size: 35px;}
+.video-frame{flex-direction: column;}
+#testimonials{padding: 20px;}
+.video-frame iframe {width: 100%;}
+h2.test-header {font-size: 35px;}
+#notable-alumni {padding: 20px;}
+#notable-alumni h2.notable-header {font-size: 35px;}
+#career-opportunities{padding: 20px;}
+#career-opportunities h2.career-header {font-size: 35px;}
+#career-opportunities p {font-size: 14px;}
+#career-paths{flex-direction: column;height: 100%;}
+#career-paths .career-card{width: 100%;}
+#career-paths .career-card.active .card-content{padding: 20px;}
+#career-paths .vertical-title {transform: unset;top: 65px;left: 0;margin: 0 auto;width: 100%;font-size: 20px;}
+#career-paths .arrow{bottom: 0px;right: 0;left: unset;}
+#career-paths .card-content{padding:0;}
+#career-paths .career-card.active p{margin-left: 0;}
+#career-paths .career-card p {margin-left: 30px !important;}
+#career-paths .career-card.active li, .career-card.active p{font-size: 14px;}
+#programmers h1.main-header {font-size: 35px;}
+#main .content-left li {margin-bottom: 10px;}
+#about .about-top {padding: 0px 20px;}
+.about-list-box {top: 0;}
+.p-1-right{padding: 10px 0;}
+#programmers .apply-btn{margin-top: 0;}
+}
+
+@media (max-width:767px){
+.p-1-right ul{display: block;border-radius: 0;}
+.p-1-right ul li:nth-child(4),.p-1-right ul li:last-child{border-radius: 0;}
+.p-1-right ul li {border-bottom: 1px solid #fff;min-height: 130px;}
+#about h1.about-header {font-size: 26px;}
+#logo img {width: 200px !important;}
+#programmers {padding: 18% 20px 0;}
+#partners .p-lists li {width: 40%;}
+#partners .p-lists li {width: auto;}
+#admission h2.ad-title {font-size: 28px;margin: 0;}
+#admission .list-name{width: 100%;height: auto;max-width: 100%;min-height: auto;position: relative;}
+.list-arrow img {max-width: 78px;height: auto;margin-left: 0;position: absolute;right: 0;top: 0;}
+.dec-home {display: none;}
+.mob-home {display: block !important;}
+#admission .list-arrow img {max-width: 65px;height: auto;margin-left: 0;position: absolute;right: 0;top: 0;}
+.list-arrow {width: 100%;height: 65px;margin-top: -80px;}
+#admission .nav-content li{width: 100%;}
+#admission .nav-content.active {display: block !important;padding: 0;}
+#admission .ad-btm {padding-top: 30px;}
+#admission .list-name h5 {font-size: 50px;}
+#scholarship p {font-size: 20px;}
+#programmers .tab-content h2 {font-size: 24px;}
+#director .director-img img {height: 290px;}
+}
+
+@media (max-width:479px){
+#counter .counter-box{width: auto;} 
+#counter {padding: 0 20px;}   
+#programmers{padding: 30% 20px 0;}
+#programmers h2.sub-header {font-size: 26px;}
+#programmers h1.main-header {font-size: 35px;}
+#programmers .tab-btn{font-size: 20px;}
+#programmers .program-btm{padding: 20px;margin-top: 20px;}
+#about .about-top {padding: 20px;}
+.about-list-box {padding: 0 20px;}
+#counter h2.counter-title {font-size: 40px;}
+#counter .counter-box h3 {font-size: 35px;}
+#counter .counter-text {font-size: 20px;}
+#programmers .program-btm-wrap {gap: 15px;}
+.p-1-right {padding: 60px 0 0;}
+#main #main-navs{gap: 10px;}
+#logo img {width: 170px !important;}
+}
