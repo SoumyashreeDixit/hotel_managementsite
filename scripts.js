@@ -3,7 +3,25 @@ Developed by- Soumyashree Dixit
 position- Web Designer/Developer
 Date-02/04/2026 
 ------------------------------*/
+//header-text
+const text = document.getElementById("moving-text");
+const container = document.querySelector("#scroll-top .container");
 
+let pos = container.offsetWidth;
+
+function animateText() {
+    pos -= 1.5;
+
+    if (pos < -text.offsetWidth) {
+        pos = container.offsetWidth;
+    }
+
+    text.style.left = pos + "px";
+
+    requestAnimationFrame(animateText);
+}
+
+animateText();
 
 //slider-carousel
 document.addEventListener("DOMContentLoaded", () => {
@@ -435,6 +453,35 @@ window.addEventListener("load", () => {
 
 });
 
+//lighbox script
+const galleryImages = document.querySelectorAll(".gallery-item img");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const closeBtn = document.querySelector(".close-btn");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.classList.add("active");
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+});
+
+lightbox.addEventListener("click", (e) => {
+    if(e.target === lightbox){
+        lightbox.classList.remove("active");
+    }
+});
+document.addEventListener("click", (e) => {
+    if(e.target.matches(".gallery-item img")){
+       lightbox.classList.add("active");
+        lightboxImg.src = e.target.src;
+    }
+});
+
 //why cgu-Tabs
 const mainTabs =
 document.querySelectorAll(".main-tab");
@@ -482,5 +529,68 @@ cards.forEach(card=>{
         card.classList.add("active");
 
     });
+
+});
+//smooth scroll
+document.querySelectorAll('#header-nav a').forEach(link => {
+
+    link.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const target =
+        document.querySelector(this.getAttribute('href'));
+
+        const headerHeight = 80; 
+
+        const targetPosition =
+        target.offsetTop - headerHeight;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+
+    });
+
+});
+
+//back to top button
+const backToTop =
+document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 500){
+
+        backToTop.classList.add("show");
+
+    }else{
+
+        backToTop.classList.remove("show");
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+//preloader
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        document
+        .getElementById("preloader")
+        .classList.add("hide");
+
+    }, 1000);
 
 });
