@@ -135,6 +135,7 @@ section#director {position: relative;padding: 80px 100px 40px;}
 #about h1.about-header {font-size: 72px;margin: 0;}
 #about .about-top {position: relative;padding: 30px 100px;}
 
+
 /* Program */
 #programmes {position: relative;padding: 42% 100px 35px;}
 #programmes h1.main-header {font-size: 80px;margin: 0;color: #FF861E;}
@@ -227,16 +228,18 @@ section#director {position: relative;padding: 80px 100px 40px;}
 #events .gallery-item.large{width:350px;height:250px;border: 5px solid #fff;}
 #events .gallery-item.wide{width:450px;height:250px;border: 5px solid #fff;}
 #events .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;border: 5px solid #fff;}
-/* #events .gallery-grid{display:grid;grid-template-columns:repeat(4,250px);grid-auto-rows:180px;gap:10px;flex-shrink:0;} */
 #events .events-top {display: flex;justify-content: space-between;align-items: center;}
 #events .events-text {width: 730px;color: #fff;border-left: 1px solid #fff;padding-left: 28px;}
 #events h2.events-title {font-weight: 700;font-size: 50px;color: #fff;}
 #events .events-btm {position: relative;padding-bottom: 100px;}
 .gallery-grid{display:grid;grid-auto-flow:column;grid-template-rows:repeat(3,180px);grid-auto-columns:350px;gap:10px;flex-shrink:0;}
-.lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:flex;justify-content:center;align-items:center;z-index:9999;opacity:0;visibility:hidden;transition:0.3s ease;}
 .lightbox.active{opacity:1;visibility:visible;}
-.lightbox-img{max-width:90%;max-height:90%;object-fit:contain;}
-.close-btn{position:absolute;top:20px;right:30px;color:#fff;font-size:45px;cursor:pointer;line-height:1;}
+.lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.9);z-index:9999;opacity:0;visibility:hidden;transition:.3s;overflow-y:auto;display:flex;justify-content:center;align-items:center;}
+.lightbox-img{width:70%;max-width:1000px;display:block;margin:50px auto 30px;object-fit:contain;}
+.lightbox-info{width:70%;max-width:1000px;margin:0 auto 50px;color:#fff;}
+.lightbox-title{font-size:32px;font-weight:700;margin-bottom:15px;}
+.lightbox-desc{font-size:18px;line-height:1.8;}
+.close-btn{position:fixed;top:20px;right:30px;color:#fff;font-size:45px;cursor:pointer;}
 
 /* Scholarship */
 #scholarship h2.scholar-heder{font-size: 45px;margin: 0;text-transform: capitalize;font-weight: 700;color: #fff;}
@@ -450,6 +453,9 @@ h2.test-header {font-size: 35px;}
 #fee-strutchure h2.fee-header,#contact h2.contact-title{font-size: 35px}
 #scroll-top{display: none;}
 .header-right i {font-size: 40px;}
+.lightbox.active{flex-direction: column;}
+.lightbox-desc {font-size: 12px;}
+.lightbox-title{font-size: 22px;}
 }
 @media (max-width:767px){
 .p-1-right ul{display: block;border-radius: 0;}
