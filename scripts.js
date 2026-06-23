@@ -370,36 +370,44 @@ document.addEventListener("DOMContentLoaded", () => {
             const text = button.textContent.trim();
 
             if (
-                text === "MSC in hotel administration"
+                text === "Master of Tourism and Hospitality(MTH)"
             ) {
 
                 eligibilityText.textContent =
-                "Successful completion of 10th, +2, +3 or equivalent from a recognized board, with minimum marks in every subject";
+                "Successfully pass with any stream of Bachelor Degree.";
 
             }
 
             else if (
-                text === "Craftmanship Certificate course in food production"
+                text === "Certificate Cource in Food Production"
             ) {
 
                 eligibilityText.textContent =
-                "Successful completion of 10th with minimum marks in every subject and it's a one year course";
+                "Passed the 10th Standard examination from a recognized educational institution.";
 
             }
 
             else if (
-                text === "Craftmanship Certificate course in Bakery & Confectionary"
+                text === "Certificate Cource in Bakery & Patisserie"
             ) {
 
                 eligibilityText.textContent =
-                "Successful completion of 10th with minimum marks in every subject and it's a one year course";
+                "Passed the 10th Standard examination from a recognized educational institution.";
+
+            }
+             else if (
+                text === "Ph.D in Tourism & Hospitality"
+            ) {
+
+                eligibilityText.textContent =
+                "Successful completion of a Master's Degree along with fulfillment of UGC norms and qualification in the CGET examination.";
 
             }
 
             else {
 
                 eligibilityText.textContent =
-                "Successful completion of 10th, +2 or equivalent from a recognized board, with minimum marks in every subject";
+                "Successful completion of 10th, +2 or equivalent from a recognized board, with minimum marks of 40%";
 
             }
 
