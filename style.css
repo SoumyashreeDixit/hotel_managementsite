@@ -130,13 +130,13 @@ section#director {position: relative;padding: 80px 100px 40px;}
 .p-1-right ul li:last-child {border-radius: 0 0 30px 0;}
 .about-list-box {position: relative;padding: 0 100px;top: -70px;}
 .about-btm{position: relative;}
-.about-btm::before{position: absolute;content: '';inset: 0;background: #fff url(./assets/bg-3.png) no-repeat;width: 100%;height: 100%;background-position: 0 100%;background-size: 100% auto;padding: 50px 0;min-height: 1184px;}
+.about-btm::before{position: absolute;content: '';inset: 0;background: #fff url(./assets/bg-f.JPG) no-repeat;width: 100%;height: 100%;background-position: 0 100%;background-size: 100% auto;padding: 50px 0;min-height: 1184px;}
 #about h2 {font-weight: 400;font-size: 20px;color: #555555;font-size: 25px;}
 #about h1.about-header {font-size: 72px;margin: 0;}
 #about .about-top {position: relative;padding: 30px 100px;}
 
 /* Program */
-#programmes {position: relative;padding: 40% 100px 35px;}
+#programmes {position: relative;padding: 42% 100px 35px;}
 #programmes h1.main-header {font-size: 80px;margin: 0;color: #FF861E;}
 #programmes .program-btm-wrap {display: flex;gap: 100px;}
 #programmes .program-btm{background:#fff;border-radius:24px;padding: 40px;box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);}
@@ -242,6 +242,9 @@ section#director {position: relative;padding: 80px 100px 40px;}
 #scholarship h2.scholar-heder{font-size: 45px;margin: 0;text-transform: capitalize;font-weight: 700;color: #fff;}
 #scholarship {position: relative;padding: 20px 100px;background: #640000;}
 #scholarship p{font-size:25px;color:#fff;font-style:italic;font-weight:600;margin: 0;}
+#scholarship .scholar-wrap {display: flex;justify-content: space-between;align-items: center;}
+#scholarship a.scholarship-btn {display: inline-block;padding:12px 25px;background:#8B4513;color:#fff;text-decoration:none;border-radius:5px;font-weight:600;transition:0.3s ease;}
+#scholarship .scholarship-btn:hover{background:#6D4C41;transform:translateY(-2px);}
 
 /* why cgu */
 #main .main-title{font-size:60px;margin:0;color: #fff;}
@@ -269,6 +272,9 @@ h2.test-header {font-weight: 700;font-size: 45px;margin: 0 0 20px;}
 #notable-alumni {position: relative;padding: 60px 100px;background: #000;color: #fff;}
 #notable-alumni h2.notable-header {font-size: 45px;font-weight: 700;margin: 0;color: #fff;}
 #notable-alumni h2.notable-header span {color: #FF861E;font-style: italic;}
+#notable-alumni .notable-wrap {display: flex;justify-content: space-between;align-items: center;}
+#notable-alumni .not-imgs a {display: inline-block;padding: 12px 25px;background: #8B4513;color: #fff;text-decoration: none;border-radius: 5px;font-weight: 600;transition: 0.3s ease;}
+#notable-alumni .not-imgs a:hover{background:#6D4C41;transform:translateY(-2px);}
 
 /* career-opportinuties */
 #career-opportunities h2.career-header {font-size: 45px;font-weight: 700;margin: 0;}
@@ -472,6 +478,11 @@ h2.test-header {font-size: 35px;}
 #message h2.messgae-title:after {top: 60px;}
 #fee-strutchure .custom-table tbody td,#fee-strutchure .custom-table thead th{font-size: 12px;}
 #programmes .p-highlight {font-size: 16px;margin-top: 10px;}
+#scholarship .scholar-wrap{flex-direction: column;gap: 20px;}
+#scholarship{text-align: center;}
+#main .content-left h3 {font-size: 30px;}
+#notable-alumni{text-align: center;}
+#notable-alumni .notable-wrap{flex-direction: column; gap: 20px;}
 }
 @media (max-width:479px){
 #counter .counter-box{width: auto;} 
